@@ -14,9 +14,22 @@
     #first-card-border {
         display: none;
     }
-    .container {
-        height: 5000px;
-    }
+
+}
+@media only screen and (min-width: 1000px) {
+  h1.montserrat {
+    font-size: 32px;
+  }
+  img#logo {
+    width: 10rem;
+    height: 6rem;
+  }
+  p {
+    font-size: 22px;
+  }
+  h3.montserrat {
+    font-size: 50px;
+  }
 }
 
 body { background: rgba(0, 20, 20, 1.2);}
@@ -29,17 +42,18 @@ body { background: rgba(0, 20, 20, 1.2);}
     text-wrap: wrap;
     flex-basis: 100%;
     /*background-color: rgba(53, 35, 35, 0.38);*/
-    background-color: rgba(0, 20, 20, 1.2);
-    height: 1600px;
+    background-color: rgba(255, 255, 255, 1);
+    height: 1410px;
 }
 #first-card {
     background-color: rgb(255, 255, 255);
     height: 7rem;
     flex-basis: 100%;
     display: inline-flex;
-    gap: 25px;
+    justify-content: space-around;
+    gap: 10px;
     border: solid 10px rgba(0, 0, 0, 0.758);
-    border-bottom-width: 0px;
+    border-bottom-width: 0px; 
 }
 #first-card-border {
     width: 100%;
@@ -49,9 +63,12 @@ body { background: rgba(0, 20, 20, 1.2);}
     margin-left: 9.5px;
     margin-right: 9.5px;
     border-radius: 5px;
+    border-bottom: grey solid 12px;;
+    border-left:rgba(0, 0, 0, 0.7752) solid 15px;
+    border-right: rgba(0, 0, 0, 0.7852) solid 3px;
 }
 #second-card {
-    background-color: rgba(0, 20, 20, 1.2);
+    background-color: rgba(255, 255, 255, 1);
     height: 22rem;
     flex-basis: 100%;
 }
@@ -73,12 +90,12 @@ body { background: rgba(0, 20, 20, 1.2);}
   }
   .courier-new {
     font-family: 'Courier New', Courier, monospace;
-    background:color-mix(in hwb increasing hue, rgb(255, 0, 0) 60%, rgb(228, 157, 25) 50%);
-    color: white;
+    background:color-mix(in hwb increasing hue, rgb(102, 18, 18) 60%, rgb(228, 157, 25) 50%);
+    color: rgb(248, 236, 106);
     text-align: center;
   }
   .trebuchet {
-    color: #F5F5F5;
+    color: #000000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-top: 25px;
     font-weight: 900;
@@ -99,9 +116,20 @@ body { background: rgba(0, 20, 20, 1.2);}
   }
   .verdana {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(242, 41, 41);
+    color: rgb(252, 23, 23);
   }
 
 .large-top-padding { padding-top: 95px;}
 .top-padding { padding-top: 8px;}
-.left-padding { padding-left: 10%; color: lightskyblue;}
+.left-padding { padding-left: 10%; color: rgb(32, 140, 207);}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  
+}
+
+h1.montserrat {
+  padding-top: 13px;
+}
